@@ -1,0 +1,16 @@
+{
+  "name": "Hubot",
+  "version": "1.0.0",
+  "author": "Mariusz Richtscheid <richtscheid@gmail.com>",
+  "description": "A robot telling what is in the picture",
+  "dependencies": {
+    "form-data": "^2.2.0",
+    "hubot": "^2.19.0",
+    "hubot-redis-brain": "0.0.4",
+    "hubot-slack": "^4.3.4",
+    "node-fetch": "^1.7.2"
+  },
+  "engines": {
+    "node": "0.10.x"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "camera",
+  "version": "1.0.0",
+  "description": "Simple server for capturing camera image",
+  "main": "index.js",
+  "author": "Mariusz Richtscheid <richtscheid@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.15.4",
+    "node-webcam": "^0.4.3"
+  }
+}

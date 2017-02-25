@@ -1,0 +1,10 @@
+Package: package
+Type: Package
+Title: Image object classification with Inception network
+Version: 1.0.0
+Author: Mariusz Richtscheid <richtscheid@gmail.com>
+Maintainer: Mariusz Richtscheid <richtscheid@gmail.com>
+Description: Provides method for image object classification
+License: MIT
+Encoding: UTF-8
+LazyData: true

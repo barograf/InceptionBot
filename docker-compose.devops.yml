@@ -1,0 +1,19 @@
+version: "3"
+services:
+  opencpu:
+    build:
+      context: .
+      dockerfile: devops/opencpu/Dockerfile
+    image: opencpu:v${OPENCPU_VERSION}
+
+  hubot:
+    build:
+      context: .
+      dockerfile: devops/hubot/Dockerfile
+    image: hubot:v${HUBOT_VERSION}
+
+  camera:
+    build:
+      context: .
+      dockerfile: devops/camera/Dockerfile
+    image: camera:v${CAMERA_VERSION}

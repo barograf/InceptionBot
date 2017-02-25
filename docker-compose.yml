@@ -1,0 +1,27 @@
+version: "3"
+services:
+  opencpu:
+    image: opencpu:v${OPENCPU_VERSION}
+    ports:
+      - 8004:8004
+
+  camera:
+    image: camera:v${CAMERA_VERSION}
+    ports:
+      - 3000:3000
+    privileged: true
+
+  hubot:
+    image: hubot:v${HUBOT_VERSION}
+    links:
+      - redis
+      - opencpu
+      - camera
+    environment:
+      - REDIS_URL="redis:6379"
+      - HUBOT_SLACK_TOKEN
+
+  redis:
+    image: redis
+    ports:
+      - 6379
